@@ -1,0 +1,2529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Die Erde. Neue Dichtungen von Waldemar Bonsels, Hans Brandenburg, Bernd Isemann, Will Vesper. München 1905/6.</title>
+            <principal>Simone Winko</principal>
+            <respStmt>
+               <resp>OCR</resp>
+               <name>Intranda GmbH</name>
+            </respStmt>
+            <respStmt>
+               <resp>Strukturierung und Korrektur</resp>
+               <name>Isabel Schlie, Lena Walter</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt><!-- Lizenz fuer den TextGrid-Import notwendig -->
+            <authority>
+               <orgName>Georg-August-Universität Göttingen, Seminar für deutsche Philologie,
+                  Lehrstuhl Simone Winko</orgName>
+               <date when="2014"/>
+            </authority>
+            <availability>
+               <p>Lizenzhinweis: Creative Commons 0</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc><!-- Daten werden fuer das TextGrid-Objekt 'edition' verwendet -->
+            <biblFull>
+               <titleStmt>
+                  <title type="anthology">Die Erde. Neue Dichtungen von Waldemar Bonsels, Hans Brandenburg, Bernd Isemann, Will Vesper.</title>
+                  <editor>Bonsels, Waldemar</editor>
+               </titleStmt>
+               <publicationStmt>
+                  <publisher>E. W. Bonsels</publisher>
+                  <pubPlace>München-Schwabing</pubPlace>
+                  <date when="1905-06"/>
+               </publicationStmt>
+            </biblFull>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Digitalisierungsprojekt zu Lyrikanthologien um 1900</p>
+         </projectDesc>
+         <samplingDecl>
+            <p>Das Dokument enthält die vollständige Anthologie inklusive Vorwort.
+               Bibliographische Angaben und Inhaltsverzeichnisse wurden nicht übernommen.</p>
+         </samplingDecl>
+         <editorialDecl>
+            <correction>
+               <p>Eindeutige Druckfehler wurden stillschweigend korrigiert.</p>
+            </correction>
+            <normalization>
+               <p>Die Umlautschreibung wurde der heutigen angepasst. Alle Verse wurden
+                  linksbündig gesetzt, Einrückungen jeglicher Art wurden nicht übernommen. Auf
+                  den Gedichttitel folgende Punkte wurden gelöscht.</p>
+            </normalization>
+            <segmentation>
+               <p>Die Anthologie besteht aus dem Vorwort (<gi>preface</gi>) und der
+                  Gedichtsammlung. Wie im Original sind die Gedichte alphabetisch nach den Namen der vier Autoren angeordnet. 
+                  Den Gedichten (<gi>poem</gi>) wird im Header jeweils die Anthologie-ID
+                  (<gi>antID</gi>)DE1905, sowie die jeweilige Gedicht-ID
+                  (<gi>poemID</gi>)DE1905.x(<gi>head</gi>) vorangestellt. Der Gedichtheader enthält
+                  außerdem den Gedichttitel (<gi>title</gi>) und den Autornamen (<gi>author</gi>) in der Form "Nachname,
+                  Vorname". Die Schreibung der Autorennamen wurde der in der GND angeglichen. Finden sich in der Anthologie
+                  alternative Schreibungen, werden diese in eckigen Klammern angeführt. Den Alternativen wird in diesen Fällen ein "alt." 
+                  vorangestellt. Pseudonyme wurden in eckigen Klammern übernommen und mit "Pseud." gekennzeichnet. 
+                  Die kleinste ausgezeichnete Texteinheit im Gedicht ist der
+                  Vers (<gi>l</gi>); zusammengehörige Versgruppen sind als Strophen
+                  (<gi>lg</gi>), zusammengehörige Strophen als <gi>section</gi> markiert.
+               </p>
+            </segmentation>
+            <interpretation>
+               <p>Untertitel, Motti usw. wurden wie folgt differenziert ausgezeichnet:
+                  1. Untertitel, die Teil des Gedichttitel sind: <gi>subHead</gi>
+                  2. Nummern vor einzelnen Gedichtteilen: <gi>sectionNumber</gi> 
+                  3. Titel von einzelnen Gedichtteilen: <gi>sectionHead</gi>
+                  4. Übergeordnetes Werk (z.B. Zyklus/Roman), dem das Gedicht entnommen ist, sofern das Werk in der Anthologie genannt wird: <gi>work</gi>
+                  5. Textgruppe (z.B. „Lieder“, „Sonette“, „Genrebilder“ usw.), der das Gedicht in der Anthologie zugeordnet ist: <gi>group</gi>
+                  6. Orts- und/oder Zeitangaben: <gi>locationDate</gi>
+                  7. Widmungen und/oder Zueignungen: <gi>dedication</gi>
+                  8. Motti: <gi>motto</gi>
+                  9. Verweise auf Quellen und Intertexte: <gi>source</gi>
+               </p>
+            </interpretation>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <creation><!-- Notwendig fuer TextGridObjekt 'work' -->
+            <date notAfter="1905-06"/>
+         </creation>
+         <textClass>
+            <keywords scheme="http://www.tei-c.org/Guidelines/">
+               <term>verse</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Vorwort</title>
+               <author>Der Verlag (E.W. Bonsels)</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+      <body>
+        <pb n="4"/>
+         <div type="dedication"><p>Dies Buch ist Teta Brandenburg gewidmet.</p></div>
+         <div type="preface"><pb n="5"/>
+               <p>Alle Richtung in Dingen der Kunst ist der Kunst zuwider. Selten haben die Vertreter einer „Richtung" ein wenig von jener wahnsinnigen Selbstbejahung und Verneinung alles Andersgearteten, die einzelnen großen Künstlern eigen war. Die Zeit, in der wir stehen, fordert bei der Zusammenfassung mehrerer Persönlichkeiten in einem Buche diese an und für sich selbstverständliche These heraus.</p>
+               <p>Dieses Buch vertritt sie mit Bewußtsein. </p>
+               <p>Es handelte sich bei der Herausgabe nicht darum, aus irgend einer Sammlerlaune einige Talente in den mehr oder weniger lockeren Zusammenhang einer Anthologie zu bringen. Vielmehr gehören die vier Autoren dieses Werkes in Wahrheit zueinander, da sie seit mehreren Jahren durch gemeinsame Arbeit verbunden sind — durch gemeinsame Arbeit, insofern sie, die nicht durch Zufall aufeinander angewiesen, sondern sich untereinander wahlverwandt sind, sich gegenseitig angeregt und gefördert haben.</p>
+               <p>Es galt nun zu zeigen, wie dieses einheitliche Streben vier Individualitäten auf verschiedenen Wegen zu verschiedenen Zielen geführt hat. Irgend eine sektiererhafte Tendenz oder irgend ein ästhetisches Spezialprogramm<pb n="6"/> lag von vornherein völlig fern; es galt lediglich, künstlerisch möglichst vollkommene Stücke zu wählen und diese zu ungefähren Bildern der·einzelnen Persönlichkeiten zusammenzuschließen.</p>
+               <p>Der Titel „Die Erde" will bezeichnend sein für das Heimatgefühl im größten Sinne, das lebendige schöpferische Bewußtsein, für die umfassende Liebe und die Sehnsucht nach großen, allgemeinen Zusammenhängen, was alles die vier Dichter des Buches, so sehr sie sich unterscheiden, am stärksten bewegt.</p>
+               <p>Der Verlag. </p>
+         </div>
+      </body>
+     </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.1</idno>
+               </title>
+               <title>Ein Anfang</title>
+               <author>Bonsels, Waldemar</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="index"><pb n="7"/><p>Waldemar Bonsels</p></div>
+            <div type="blankPange"><pb n="8"/></div>
+            <div type="poem"><pb n="9"/>
+               <head type="head">Ein Anfang</head>
+               <lg>
+                  <l>Auf schlug der Falke, eh der Morgen war. </l>
+                  <l>Bis sich sein nachttau-kühles Flügelpaar </l>
+                  <l>in hohes Gold der fernen Sonne tauchte. </l>
+                  <l>Die Erde schlief. Ihr Werdedrang gebar </l>
+                  <l>grauschweren Dunst, der kühl durch Eichen rauchte. </l>
+               </lg>
+               <lg>
+                  <l>An Felsen-Firnen schrickt es rot empor </l>
+                  <l>und glüht sich nieder durch zerfetzten Flor. </l>
+               </lg>
+               <lg>
+                  <l>Das zornig-weiße Feuer von Demanten </l>
+                  <l>erstarrt in Blitzen an granitnen Kanten. </l>
+                  <l>Und tief taucht klar die Welt in bunter Ruh </l>
+                  <l>dem blauen Silber eines Tages zu, </l>
+                  <l>um sich in kühlen, tiefen Atemzügen </l>
+                  <l>sehnsüchtig drängend an das Licht zu schmiegen. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.2</idno>
+               </title>
+               <title>Elise</title>
+               <author>Bonsels, Waldemar</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="10"/>
+               <head type="head">Elise</head>
+               <div type="section">
+                  <head type="sectionNumber">I.</head>
+                  <lg>
+                     <l>Es kommt ein leises Singen </l>
+                     <l>weit, weit her; </l>
+                     <l>wie Harfenklingen </l>
+                     <l>verloren am Meer. </l>
+                  </lg>
+                  <lg>
+                     <l>Als ob viel Tränen flössen </l>
+                     <l>heiß um ein erstes Kind. </l>
+                     <l>Als ob sich Augen schlössen, </l>
+                     <l>die rein geblieben sind. — </l>
+                  </lg>
+                  <lg>
+                     <l>Es geht ein dunkelhaarig Kind </l>
+                     <l>fern einsam durch den Heidegrund. </l>
+                     <l>Mit ihren Haaren spielt der Wind, </l>
+                     <l>ein Lächeln schmerzt um ihren Mund. </l>
+                  </lg>
+                  <lg>
+                     <l>Dies Lächeln will ich kennen. </l>
+                     <l>In seinem süßen Bittersein </l>
+                     <l>und seinem wehen Brennen </l>
+                     <l>schlief meine erste Jugend ein. </l>
+                  </lg>
+               </div>
+               <div type="section"><pb n="11"/>
+                  <head type="sectionNumber">II.</head>
+                  <lg>
+                     <l>Und aus einer Nacht blieb Dein Gesicht </l>
+                     <l>schmaler, bleicher Marmor, kühl und licht </l>
+                     <l>über matter Not und blassem Leide. </l>
+                     <l>Buchenrauschen dunkel drüber hin </l>
+                     <l>aus den Wäldern meiner Heide, </l>
+                     <l>wo ich heimisch bin. </l>
+                  </lg>
+                  <lg>
+                     <l>Siehst Du, wie sich ihre Kronen neigen, </l>
+                     <l>die der Sturm dem Himmelsblau zerreißt, </l>
+                     <l>wie der Fels in seiner trotzig-roten Eigen-Art </l>
+                     <l>durch ihre grünen Wogen gleißt? </l>
+                  </lg>
+                  <lg>
+                     <l>Eine Flöte spielt versunken; </l>
+                     <l>kindlich-schlicht, nun schwermut-trunken </l>
+                     <l>winderhoben und bedrückt, </l>
+                     <l>daß Musik in lichten stillen Funken-Kränzen </l>
+                     <l>Deine Schläfen schmückt. </l>
+                  </lg>
+               </div>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.3</idno>
+               </title>
+               <title>Dir</title>
+               <author>Bonsels, Waldemar</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="12"/>
+               <head type="head">Dir</head>
+               <div type="section">
+                  <head type="sectionNumber">I.</head>
+                  <lg>
+                     <l>Du bist meine Heimat nicht. </l>
+                     <l>— Meine Heimat weiß mir Ruh. — </l>
+                     <l>Schon mancher ward verschlagen, </l>
+                     <l>mein Herz, du mußt es tragen. </l>
+                     <l>Still wirst auch du. </l>
+                  </lg>
+                  <lg>
+                     <l>— Ich hab Dich lieb. Dein fein Gesicht </l>
+                     <l>kennt meine Seele und nennt mein Geschick. </l>
+                     <l>Aber Du, </l>
+                     <l>meine Heimat bist Du nicht, </l>
+                     <l>meine Heimat weiß mir Ruh. </l>
+                  </lg>
+                  <lg>
+                     <l>Aber leg Deine Hände — einst </l>
+                     <l>auf meine Augen. Und wenn Du weinst, </l>
+                     <l>so will ich träumen: Du bist es gewesen, </l>
+                     <l>durch die ich endlich doch genesen. </l>
+                  </lg>
+               </div>
+               <div type="section"><pb n="13"/>
+                  <head type="sectionNumber">II.</head>
+                  <lg>
+                     <l>Hinter unsrer Bettstatt steht der Tod. </l>
+                     <l>Sein Gesicht ist grau und dunkel und sein Mantel blutigrot. </l>
+                     <l>Wenn in Wut und tausend Lebensbränden </l>
+                     <l>flammend Blut und Sehnsucht sich begegnen, </l>
+                     <l>seh ich ihn mit beiden Händen </l>
+                     <l>unsre Gluten segnen. — </l>
+                  </lg>
+                  <lg>
+                     <l>Mir rinnt zu heiß aus dem Herzen </l>
+                     <l>bitter verhaltenes Blut. </l>
+                     <l>Ich geb Dir zu viele Schmerzen </l>
+                     <l>mit meiner Glut. </l>
+                  </lg>
+                  <lg>
+                     <l>Und wenn Du schläfst, — ein erstes Morgenblau </l>
+                     <l>kühlt blaß empor um ferne grüne Höhn, </l>
+                     <l>im Dämmern mag nun neu ein klarer Tau </l>
+                     <l>in Silber-Schwermut kühl auf Blüten stehn — </l>
+                  </lg>
+                  <lg>
+                     <l>sucht oft mein Blick Dein kindliches Gesicht, </l>
+                     <l>das all die Sehnsucht trägt, die mich zerstörte, </l>
+                     <l>als Deine Seele mir noch nicht gehörte, </l>
+                     <l>als ich Dich suchte und ich fand Dich nicht. </l>
+                  </lg>
+                  <lg>
+                     <l>Ich weiß, wann ich noch einmal Tränen finde, </l>
+                     <l>an einer Wiege einst. Vor meinem Kinde. </l>
+                  </lg>
+               </div>
+               <div type="section"><pb n="14"/>
+                  <head type="sectionNumber">III.</head>
+                  <lg>
+                     <l>Mich hat geträumt, ich hätte Dich getötet. </l>
+                     <l>Weiß über Kreuz auf Deiner Brust die Hände — </l>
+                     <l>In matten Tönen nahm der Tag sein Ende. </l>
+                     <l>Und Deine Lippen waren fein gerötet. </l>
+                  </lg>
+                  <lg>
+                     <l>— Ich sah viel Kerzen ihre Seelen heben: </l>
+                     <l>verzagter Aufstieg in gebanntem Beben </l>
+                     <l>und krankem Schein. In sich gestillte Qual. </l>
+                     <l>Ein blauer Vorhang grenzte nächtig hinten, </l>
+                     <l>auf glitt ein Atmen kühler Hyazinthen. —  </l>
+                     <l>Du bist gestorben. Nur die Lippen leben. </l>
+                  </lg>
+                  <lg>
+                     <l>Ein wehes Lächeln, kindlich und erhaben, </l>
+                     <l>gebannt auf diesen Lippen. Nie verloren. </l>
+                     <l>So wird es bleiben, wenn sie Dich begraben. </l>
+                     <l>Es war vor Dir, noch ehe Du geboren. </l>
+                  </lg>
+                  <lg>
+                     <l>In dunklen Rätseln kühlt es über Schmerzen </l>
+                     <l>und martert Sehnsucht an verfluchtes Licht. </l>
+                     <l>Durchquälte Lüste peitschen Herz zu Herzen, </l>
+                     <l>bis neues Leben aus den Gluten bricht. </l>
+                  </lg>
+                  <lg>
+                     <l>O dunkles Spiegeln in bewegtem Ringe, </l>
+                     <l>wo sich des Daseins Ursprung selbst erblickt — </l>
+                     <l>Es ist das Lächeln, das den Tod erschrickt </l>
+                     <l>am Ende aller Dinge. </l>
+                  </lg>
+               </div>
+               <div type="section"><pb n="15"/>
+                  <head type="sectionNumber">IV.</head>
+                  <lg>
+                     <l>Nun ist die Erde ruhig geworden. </l>
+                     <l>Der Tag schläft ein. </l>
+                     <l>Auf Deinen blonden Haaren spielt in tiefem Gold </l>
+                     <l>sein letzter Schein. </l>
+                  </lg>
+                  <lg>
+                     <l>Gedanken sinken in schmerzloser, matter Gestalt, </l>
+                     <l>zwingen sich auf mit kühler, stiller Gewalt, </l>
+                     <l>legen die Seele verhalten in fremden Bann, </l>
+                     <l>den sie nicht lösen will und nicht lassen kann. </l>
+                  </lg>
+                  <lg>
+                     <l>Alles, was ich so bitter durchlitten um Dich, </l>
+                     <l>steigt aus verklärter Sehnsucht und tröstet mich. — </l>
+                  </lg>
+                  <lg>
+                     <l>Um Deine Stirne noch zögernd ein Schein von Glut. </l>
+                     <l>Fern eine Amsel. Die Erde atmet und ruht. </l>
+                  </lg>
+               </div>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.4</idno>
+               </title>
+               <title>Einer jungen Frau</title>
+               <author>Bonsels, Waldemar</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="16"/>
+               <head type="head">Einer jungen Frau</head>
+               <lg>
+                  <l>Philister-Pack, das Deine Seele lyncht! </l>
+                  <l>Und niemand weiß, wie heiß Dein Blut geflossen. </l>
+                  <l>Pikiert ein Affe, der mit Anstands-Glossen </l>
+                  <l>moralisch-dämlich alles übertüncht. — </l>
+               </lg>
+               <lg>
+                  <l>Leb wohl. Der Tag wird Dich vergessen lehren, </l>
+                  <l>was jäh entflammte, als Du mir Dich neigtest, </l>
+                  <l>doch seit Du mir die tiefsten Wunden zeigtest, </l>
+                  <l>wird Deine Sehnsucht immer mir gehören. </l>
+               </lg>
+               <lg>
+                  <l>Und spät einmal — wenn Deine Wünsche schlafen, </l>
+                  <l>wirst Du es segnen, daß wir einst uns trafen. </l>
+                  <l>Dir selber fremd hast Du in mir gelesen, </l>
+                  <l>dass ich Dein Frühling und Dein Tod gewesen. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.5</idno>
+               </title>
+               <title>Verklärung</title>
+               <author>Bonsels, Waldemar</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="17"/>
+               <head type="head">Verklärung</head>
+               <lg>
+                  <l>Ach halten können, halten! </l>
+                  <l>Das ist mein letztes Lenzgedicht </l>
+                  <l>mit blutigem Händefalten </l>
+                  <l>vor des Frühlings Angesicht. </l>
+               </lg>
+               <lg>
+                  <l>— Lass Dein verklärend Glänzen </l>
+                  <l>und Deine schaffende Pracht </l>
+                  <l>mit mir weit über die Grenzen </l>
+                  <l>einer großen kommenden Nacht. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.6</idno>
+               </title>
+               <title>Nach heißer Nacht</title>
+               <author>Bonsels, Waldemar</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="18"/>
+               <head type="head">Nach heißer Nacht</head>
+               <lg>
+                  <l>Laternen brennen immer noch </l>
+                  <l>in gelb-rot müden Reihn. </l>
+                  <l>Es reckt sich blaß umher zum Frühling auf. </l>
+                  <l>Verirrte Wolken ziehn in blauem Schein. </l>
+               </lg>
+               <lg>
+                  <l>Hellauf ein Flötenschluchzen </l>
+                  <l>ohne Melodie, </l>
+                  <l>eine Drossel singt im Frühblau auf, </l>
+                  <l>viel zu früh. </l>
+               </lg>
+               <lg>
+                  <l>Im Dämmerschweigen klappt ein fremder Schritt, </l>
+                  <l>von drüben läuft das Echo schläfrig mit — </l>
+                  <l>Fern aus den Gärten wieder hell der Sang. </l>
+                  <l>Nur zwei Laternen noch. Der Weg war lang. </l>
+               </lg>
+               <lg>
+                  <l>O Heimweh über die Erde. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.7</idno>
+               </title>
+               <title>Der Tod</title>
+               <author>Bonsels, Waldemar</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="19"/> 
+               <head type="head">Der Tod</head>
+               <lg>
+                  <l>Lose Wolken im Sonnenlicht, </l>
+                  <l>das nicht auf die Erde will. </l>
+                  <l>Meine Seele hat ihr Marmorgesicht. </l>
+                  <l>Die Zeit steht heute still. </l>
+               </lg>
+               <lg>
+                  <l>Ein Mädchen geht vergessenen Weg </l>
+                  <l>am Mittag mit bloßen Füßen. — </l>
+                  <l>Was ich in den wehenden Sonnenschein leg, </l>
+                  <l>ist Sehnsucht mit frostigen Grüßen </l>
+               </lg>
+               <lg>
+                  <l>und schmalem Lächeln an alte Not. </l>
+                  <l>Heut lächeln alle Wunden — </l>
+                  <l>Ich fühle, in solchen Stunden </l>
+                  <l>steht dicht, dicht neben mir der Tod. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.8</idno>
+               </title>
+               <title>Madonna. Ein Gebet</title>
+               <author>Bonsels, Waldemar</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="20"/>
+               <head type="head">Madonna. Ein Gebet</head>
+               <lg>
+                  <l>Ich weiß von zu viel Widerwärtigkeiten </l>
+                  <l>in Kemenaten und auf grüner Au: </l>
+                  <l>Als Glanz-Symbol von Fingerfertigkeiten </l>
+                  <l>erscheint mir heut Dein Halbmond, Liebe Frau. </l>
+               </lg>
+               <lg>
+                  <l>Die fade Kraft gesegneten Verhaltens </l>
+                  <l>ist mir verhaßt. Es stinkt der Tod darin. </l>
+                  <l>Die Kraft-Verruchtheit sündigen Gestaltens </l>
+                  <l>drängt auf die Ewigkeit des Lebens hin. </l>
+               </lg>
+               <lg>
+                  <l>Schwer lasten dunkel unter Silberfirnen </l>
+                  <l>die Farben-Düfte, die Dein Altar rauchte. </l>
+                  <l>— Wir tragen Sternenkränze an den Stirnen, </l>
+                  <l>die Todgeweihten, die das Leben brauchte. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.9</idno>
+               </title>
+               <title>Erde, liebe Mutter</title>
+               <author>Bonsels, Waldemar</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="21"/>
+               <head type="head">Erde, liebe Mutter</head>
+               <div type="section">
+                  <head type="sectionNumber">I.</head>
+                  <lg>
+                     <l>Erde, liebe Mutter, </l>
+                     <l>laß mich wieder fühlen </l>
+                     <l>Deinen kühlen </l>
+                     <l>immer gleichen Aderschlag, </l>
+                     <l>der Verwesen </l>
+                     <l>und Genesen </l>
+                     <l>und Erstehn zu neuem Wesen </l>
+                     <l>meinem Herzen bringen mag. </l>
+                  </lg>
+                  <lg>
+                     <l>Acker dampfen schwer in Morgenglut, </l>
+                     <l>und im Nebel reckt der Wald sich auf. </l>
+                     <l>Aus der Quelle silbert helles Blut, </l>
+                     <l>neu erlöst zu ewig gleichem Lauf. </l>
+                  </lg>
+                  <lg>
+                     <l>Erde, liebe Mutter, </l>
+                     <l>nimm das Zittern </l>
+                     <l>meines Herzens auf in Deine Fülle, </l>
+                     <l>stille, </l>
+                     <l>was nach all den bittern, </l>
+                     <l>heißen Stunden </l>
+                     <l>arm und wesenlos zu Dir gefunden, </l>
+                     <l>daß mein neuer starker Wille </l>
+                     <l>Niegestilltes tragen lernt. </l>
+                  </lg>
+               </div>
+               <div type="section"><pb n="22"/>
+                  <head type="sectionNumber">II.</head>
+                  <lg>
+                     <l>Sternenübersilbert sind die fernen Höhn. </l>
+                     <l>Brüste meiner dunklen Erde, die in blauer Sehnsucht stehn. </l>
+                     <l>O mit Dir, mit Dir mich eins zu fühlen! </l>
+                     <l>Einmal tief verirrte Gluten kühlen. </l>
+                     <l>Einst erst — einst. Dein weites Dunkel spricht. </l>
+                     <l>O ich möchte mein Gesicht </l>
+                     <l>in die schweren Ackerschollen wühlen. </l>
+                  </lg>
+               </div>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.10</idno>
+               </title>
+               <title>Bei Nacht</title>
+               <author>Bonsels, Waldemar</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="23"/>
+               <head type="head">Bei Nacht</head>
+               <head type="dedication">(Meiner Schwester Anni.)</head>
+               <div type="section">
+                  <head type="sectionNumber">I.</head>
+                  <lg>
+                     <l>Schlug das Leben tiefe Wunden? </l>
+                     <l>Seine Schmerzen sind sein Segen. </l>
+                     <l>Kühl in unsre Sehnsucht legen </l>
+                     <l>sich die Träume vom Gesunden. </l>
+                  </lg>
+                  <lg>
+                     <l>Seligkeit ist Not in Gluten. </l>
+                     <l>O der Sonne Glauben halten! </l>
+                     <l>In der Sonne blühn und bluten. </l>
+                     <l>Alle Ruhe ist Erkalten. </l>
+                  </lg>
+                  <lg>
+                     <l>Dunkel harrt der tiefsten Frage, </l>
+                     <l>unser Herz bleibt wankelmütig. </l>
+                     <l>Aller Schlaf ist kurz und gütig. — </l>
+                     <l>Fernher kreist das Licht zum Tage. </l>
+                  </lg>
+               </div>
+               <div type="section"><pb n="24"/>
+                  <head type="sectionNumber">II.</head>
+                  <lg>
+                     <l>Einst war ich ich selber, froh, ach froh. </l>
+                     <l>Nun schreite ich neben mir her. </l>
+                     <l>Stunde für Stunde. Zertrennt. Oh so </l>
+                     <l>kühl und erstorben und schwer. </l>
+                  </lg>
+                  <lg>
+                     <l>— Senkt sich Ruhe? — Schleier niederrauchen. </l>
+                     <l>Blicke, die zusammentauchen, </l>
+                     <l>gleichen sich. </l>
+                     <l>Hände, die sich nicht mehr brauchen, </l>
+                     <l>reichen sich, </l>
+                     <l>alte Sehnsucht neu zu binden. </l>
+                     <l>Und der Geist schwirrt aus, zu finden, </l>
+                     <l>was die erste Einheit jäh zerbrach. </l>
+                     <l>Vage Träume huschen nach. </l>
+                  </lg>
+                  <lg>
+                     <l>— Einst hob sich geblendet ein blasses Gesicht: </l>
+                     <l>Aus blutbrausendem Taumel, marmorlicht, </l>
+                     <l>gab sich das Leben, nackt und schlicht. </l>
+                     <l>Herzblut erstürzte sich. Sehnsucht zerbrach. </l>
+                  </lg>
+                  <lg>
+                     <l>Ein Knabe auf seinen Knieen lag. </l>
+                  </lg>
+                  <lg>
+                     <l>Still Herz, still, was suchst Du danach. </l>
+                     <l>Neues Leben, das altes zerbrach. </l>
+                     <l>Still — im Schlafe will sich finden, </l>
+                     <l>wieder binden, </l>
+                     <l>was das Leben tödlich traf. </l>
+                  </lg>
+               </div>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.11</idno>
+               </title>
+               <title>Vor Sommer</title>
+               <author>Bonsels, Waldemar</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="25"/>
+               <head type="head">Vor Sommer</head>
+               <lg>
+                  <l>Und aus durchblühter, verworrener Fülle </l>
+                  <l>blaut schon des Sommers leuchtende Stille. </l>
+                  <l>Die Erde wird lieblicher Tag für Tag. </l>
+               </lg>
+               <lg>
+                  <l>Grell loht ein Leben auf aus toten Nöten. </l>
+                  <l>Auf krampft ein Wille aus verwelkter Zeit </l>
+                  <l>und jauchzt sich stählern über neue Röten </l>
+                  <l>in Zuversicht durchsonnter Ewigkeit. </l>
+               </lg>
+               <lg>
+                  <l>Schon klingt mein Lied. Schon klingt mein Lied! </l>
+                  <l>Meine Erde wartet. Die Erde glüht! </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI> 
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.12</idno>
+               </title>
+               <title>Sonnensturm</title>
+               <author>Brandenburg, Hans</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="blankPage"><pb n="26"/></div>
+            <div type="index"><pb n="27"/><p>Hans Brandenburg</p></div>
+            <div type="blankPage"><pb n="28"/></div>            
+            <div type="poem"><pb n="29"/>
+               <head type="head">Sonnensturm</head>
+               <lg>
+                  <l>Es sei der Sturm, nein, sagt mir das nicht, </l>
+                  <l>der aus dem Schlaf mich geschreckt — </l>
+                  <l>nein, schmetternd hat das jubelnde Licht </l>
+                  <l>in der Erde die Kraft geweckt. </l>
+                  <l>Der Sturm, der fegende, ist das nicht: </l>
+                  <l>es schoß aus dem Himmel im Schwung das Licht </l>
+                  <l>und hat die verschlafene Urkraft geweckt. </l>
+                  <l>Da bricht, </l>
+                  <l>da schießt sie, da wirbelt sie hoch zum Licht, </l>
+                  <l>dann hat sie sich straff in die Bäume gereckt. </l>
+                  <l>Oh, wie sie sich nun drin schüttelt und dreht und ringt, </l>
+                  <l>wildschreiend durch die Kronen springt, </l>
+                  <l>daß die durch die Sonne taumeln und fahren </l>
+                  <l>und in wunderbaren </l>
+                  <l>Urtönen ein trunkenes Lied anheben, — </l>
+                  <l>das schwillt und wächst und wird ein Leben </l>
+                  <l>aus Ton, aus Sonne, aus Kraft, aus Licht. </l>
+               </lg>
+               <lg>
+                  <l>Der Sturm ist das nicht. </l>
+               </lg>
+               <lg>
+                  <l>Sonne, Du Sonne, oh Sonne Du, </l>
+                  <l>Dir schauern auch meine Kräfte zu. </l>
+                  <l>Ich lag die Nacht auf dunstigem Kissen; </l>
+                  <l>meine Sinne schwankten in Finsternissen, </l>
+                  <l>haben in Schmutz und Lüsten gelegen — </l>
+      <pb n="30"/><l>Sonne, Du Sonne, oh Sonne Du, </l>
+                  <l>nun schluchzt meine Seele dem Lichte zu, </l>
+                  <l>und meine Kräfte wollen sich regen, </l>
+                  <l>wollen in Wildheit, in Reinheit und Sehnen </l>
+                  <l>auf sich dehnen, </l>
+                  <l>wollen, was aus den dumpfdunstenden Schluchten </l>
+                  <l>schwüler Nacht fangarmig kroch </l>
+                  <l>und sie lähmte, niederwuchten </l>
+                  <l>und Deinen lebendigen Strahlen entgegen </l>
+                  <l>mit einem jauchzenden „Doch! </l>
+                  <l>Dennoch! Trotz! Wir sind frei! </l>
+                  <l>Wir schauern lichtatmend Dir zu, </l>
+                  <l>Sonne, Du Sonne, oh Sonne Du!" — </l>
+               </lg>
+               <lg>
+                  <l>Das aber, Sonne, ist Dein mächtig Werk, </l>
+                  <l>daß ich in niegefühlten Gluten merk, </l>
+                  <l>daß jetzt die Zeit ist, wo ich jeden Zwang </l>
+                  <l>abschleudern muß und meinem reifen Drang </l>
+                  <l>ins Leben folgen, in die große Welt, </l>
+                  <l>lachend und siegend, Knab und Held. — </l>
+                  <l>Ja, meine Lieben all: wohl weiß ichs gut, </l>
+                  <l>wie sich in eurer Hut </l>
+                  <l>zu schöner Klarheit zähmt die Springeflut, </l>
+                  <l>die in mir tanzt, toll übers Ufer will — </l>
+                  <l>Ihr meine Lieben, oft auch hab ich still </l>
+                  <l>mein Haupt zurückgelegt in Seligkeit </l>
+                  <l>und Glück, weil ihr so treu und gut mir seid. </l>
+                  <l>Jetzt aber schreit in mir der fremde Drang, </l>
+      <pb n="31"/><l>jetzt scheint es mir ein Glück, in fremdem Land </l>
+                  <l>auf fremdem Kissen Nächte lang </l>
+                  <l>zu weinen, daß ich meine Hand </l>
+                  <l>aus eurer weichen, lieben, guten wand: — </l>
+                  <l>denn Glück ist das nur, was man längst verlor, </l>
+                  <l>wonach das Herz sich heimwärts sehnt... </l>
+                  <l>Dies Schmerzglück aber macht, daß weit die Brust sich dehnt </l>
+                  <l>in mutigstolzen Atemzügen, </l>
+                  <l>sich nicht um das auch zu betrügen, </l>
+                  <l>was man sich selbst als neues Los erkor... </l>
+                  <l>Drum will ich alles das, was eure Hand mir gab, </l>
+                  <l>wegwerfen und den Wanderstab </l>
+                  <l>hoch auf dem Weg in die Fernen schwingen, </l>
+                  <l>will stählerne, werbende Lieder singen </l>
+                  <l>laut durch die Welt. Und rasseln soll </l>
+                  <l>und fliegen mein Schwert siegestoll, </l>
+                  <l>meine Jugend soll leuchten und lachen, </l>
+                  <l>werben die Starken, trösten die Schwachen. </l>
+                  <l>Weck mir stets die Kraft dazu, </l>
+                  <l>Sonne, Du Sonne, oh Sonne Du! — </l>
+               </lg>
+               <lg>
+                  <l>So haben meine Sonnenkräfte gesprüht </l>
+                  <l>in den großen schwingenden Morgen hinein, </l>
+                  <l>so war in hohem Traum die Erfüllung mein </l>
+                  <l>des Dranges, der in mir glüht; </l>
+                  <l>so wollt ich hingehn in die Welt und es fassen, </l>
+                  <l>was mich der Drang, den die Sonne reifte, fassen gelehrt — </l>
+      <pb n="32"/><l>und mußt es dennoch lassen, </l>
+                  <l>weil mir ein Anderes wehrt, </l>
+                  <l>weil es grau und überlegen </l>
+                  <l>nüchtern und berechnend kam </l>
+                  <l>und mir den Sonnensegen </l>
+                  <l>kalt und verständig aus dem Herzen nahm. </l>
+                  <l>Mein Sehnen aber, mein Sehnen geht Dir, </l>
+                  <l>Tag der Erfüllung, zu —: </l>
+                  <l>Wann bringst Du ihn mir, wann bringst Du ihn mir, </l>
+                  <l>Sonne, oh Sonne Du? </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.13</idno>
+               </title>
+               <title>Mona Lisa</title>
+               <author>Brandenburg, Hans</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="33"/>
+               <head type="head">Mona Lisa</head>
+               <head type="subHead"> des Lionardo da Vinci</head>
+               <lg>
+                  <l>Was sagst Du Süßes mir, oh holdes Bild? </l>
+                  <l>Ist denn die Anmut, die mit weicher Wärme </l>
+                  <l>aus Deinen Augen träumt, um Deinen Mund </l>
+                  <l>fein-schalkig zuckt und doch von höflicher </l>
+                  <l>Aufmerksamkeit sittsam gebändigt wild </l>
+                  <l>zu edler Ruh, — die Anmut, die jungfräulich, </l>
+                  <l>nein, mädchenhaft, vom weißen Hals und von </l>
+                  <l>der schönen Brust herspielt mit stillem Zauber, — </l>
+                  <l>die Anmut, die das fließende Gewand, </l>
+                  <l>die wunderzarten, schlanken Damenhände </l>
+                  <l>in Fülle spenden — ist die Anmut nur, </l>
+                  <l>daß sie in mir mit allen ihren Reizen </l>
+                  <l>ein wirr, ein hold, ein tief Geheimnis schafft, </l>
+                  <l>tausende Träume lockt und Stimmen aufweckt, </l>
+                  <l>die mir die Sinne nehmen und zugleich </l>
+                  <l>doch so ein unsagbares Glück bewirken? </l>
+               </lg>
+               <lg>
+                  <l>Oh meine Dame, Mona Lisa, Weib! </l>
+                  <l>Was redest Du zu mir durch späte Nacht? </l>
+                  <l>Weißt Du denn nicht, daß jetzt die Nächte sind, </l>
+                  <l>wo der Jasminduft träumerisch sich ausstreckt, </l>
+                  <l>die schwüle Hand uns auf die Stirne legt </l>
+                  <l>und leis zu locken scheint: Komm, komm, die Sünde </l>
+                  <l>ist süß, und Lieb und Sehnen bringen Glück!? — </l>
+               </lg>
+   <pb n="34"/><lg>
+                  <l>Was ists mit mir, daß ich des Nachts so oft </l>
+                  <l>auffahren möcht, zum Wanderstock irr tastend </l>
+                  <l>in dunkle Wälder meine Straße schwanken </l>
+                  <l>möcht, fieberheiß vor zitterndem Verlangen? ... </l>
+                  <l>Mir weckt ein Weib mit ihren kleinsten Reizen </l>
+                  <l>krankende Sehnsucht: — fest möcht ich den Fuß </l>
+                  <l>aufsetzen, über sie ein Sieger sein, </l>
+                  <l>ein Sturm-Eroberer, — — ach, doch mein FuB, </l>
+                  <l>der auf die Sinne hören will, ist schwank, </l>
+                  <l>weil meine Seele ganz, ganz anders will, </l>
+                  <l>die sich in Ehrfurcht vor dem reinen Weib beugt </l>
+                  <l>und nichts verlangt als ihrer Seele Grüßen. </l>
+               </lg>
+               <lg>
+                  <l>Oh Mona Lisa! Leise geht ein Ton </l>
+                  <l>von Deinem Bild zu mir durch späte Nacht. </l>
+                  <l>Ein Ton, der mir von Seelenreinheit kündet, </l>
+                  <l>von Heimweh spricht, das auf zum Himmel führt, </l>
+                  <l>der von Entsagen redet und vom Glück </l>
+                  <l>des Friedens, der die rohe Welt nicht kennt. </l>
+                  <l>Oh Mona Lisa! Schütze meine Jugend </l>
+                  <l>mit Deiner Anmut, die vom Himmel ist. </l>
+                  <l>Leg Deine Hand auf meine Fieberstirn, </l>
+                  <l>die sanfte, gute, feine Frauenhand, </l>
+                  <l>kühl all mein Brennen, das nicht edel flammt, </l>
+                  <l>stimm Du mein Lied, stimm Du mein Leben zu </l>
+                  <l>gottsuchendem, tiefreinem Seelenklang. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.14</idno>
+               </title>
+               <title>Schluß-Choral</title>
+               <author>Brandenburg, Hans</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="35"/>
+               <head type="head">Schluß-Choral</head>
+               <head type="work">aus „Lieder vom Weibe"</head>
+               <lg>
+                  <l>Wir lebten tief in Frauenseelen </l>
+                  <l>und Weibesanmut uns hinein — </l>
+                  <l>Ach, könnten wir das nur verhehlen, </l>
+                  <l>wir würden bald Geliebte sein. </l>
+                  <l>Uns fehlt das Reizvoll-Wundersame; </l>
+                  <l>das ist es, was uns ewig hemmt: </l>
+                  <l>Es ist den Weibern unser Name </l>
+                  <l>nicht neu und nicht verlockend-fremd. </l>
+               </lg>
+               <lg>
+                  <l>Wir haben viel im Weib gelesen, </l>
+                  <l>drum nahmen wir so vieles an: </l>
+                  <l>Wir sind ein Stück von ihrem Wesen </l>
+                  <l>geworden, wir sind nicht mehr Mann. </l>
+                  <l>Sind ihnen eine wunderbare </l>
+                  <l>verlorne Jugendmelodie. </l>
+                  <l>Sie streichen leis uns durch die Haare, </l>
+                  <l>denn unsre Lieder rühren sie. </l>
+               </lg>
+               <lg>
+                  <l>Oh, wären kühn wir und verwegen, </l>
+                  <l>erobrungsfrech und siegestoll — </l>
+                  <l>Uns macht die Frau so süßverlegen, </l>
+                  <l>so schüchtern und gedankenvoll; </l>
+                  <l>wir schreiben Lieder statt zu sprechen, </l>
+                  <l>wir küssen nur die Hände ihr, </l>
+                  <l>und wir vergöttern, statt zu brechen, </l>
+                  <l>und statt zu lachen, beten wir. </l>
+               </lg>
+   <pb n="36"/><lg>
+                  <l>Und spinnen einmal Liebesfäden </l>
+                  <l>zu unsrer Hand von Mädchenhand, </l>
+                  <l>zu Liedern wird all unser Reden, </l>
+                  <l>wir werden viel zu imposant. </l>
+                  <l>Wir rüsten uns zum Schöpferwerke, </l>
+                  <l>zum Formen einer großen Braut, </l>
+                  <l>wir zeigen so erhabne Stärke, </l>
+                  <l>daß ihnen allzuhäufig graut. </l>
+               </lg>
+               <lg>
+                  <l>Wir werden Schöpfer und wir schaffen </l>
+                  <l>uns einen Menschen, der wie wir, </l>
+                  <l>wir geben Glut dem Weib und Waffen </l>
+                  <l>und geben unsren Glauben ihr. </l>
+                  <l>Wir geben ihr die Kraft ins Leben, </l>
+                  <l>den Mut zur freien, großen Tat, </l>
+                  <l>und wir sind die, die alles geben, </l>
+                  <l>und pflanzen eine heilge Saat. </l>
+               </lg>
+               <lg>
+                  <l>Wir Toren! die wir niemals lernten, </l>
+                  <l>daß, was wie wir ist, uns nicht liebt — </l>
+                  <l>Es wird, was wir gesät, einst ernten </l>
+                  <l>ein andrer, der nur nimmt, nicht gibt. </l>
+                  <l>Wir haben in ein Herz getragen, </l>
+                  <l>was eines andern Liebe frommt, </l>
+                  <l>wir müssen bitterlich entsagen, </l>
+                  <l>wenn unsrer Saat die Ernte kommt. </l>
+               </lg>
+               <lg>
+                  <l>Es weben reinste Frauenhände </l>
+                  <l>um unsre Stirn ein großes Lied, </l>
+                  <l>ein Lied, des wunderstarkes Ende </l>
+      <pb n="37"/><l>uns einmal in den Himmel zieht. </l>
+                  <l>Doch brechen durch das zarte Weben </l>
+                  <l>Sturmtöne unsrer Leidenschaft </l>
+                  <l>voll Sehnsucht, denn wir wollen leben </l>
+                  <l>und sind voll ungestümer Kraft. </l>
+               </lg>
+               <lg>
+                  <l>Doch weil wir nie das Glück gefunden </l>
+                  <l>der Liebe, wurden wir so scheu, </l>
+                  <l>es bluten die geheimen Wunden </l>
+                  <l>der Sehnsucht alle Tage neu. </l>
+                  <l>Drum gehn wir oft so durch die Buchen </l>
+                  <l>des Nachts und sehen nichts als Weiß… </l>
+                  <l>Es ist ein töricht, kindisch Suchen, </l>
+                  <l>doch sind wir so unendlich heiß. </l>
+               </lg>
+               <lg>
+                  <l>So suchen, suchen wir das Schöne, </l>
+                  <l>weils rätselhaft und tiefgeheim, </l>
+                  <l>doch unsre goldensüßen Töne, </l>
+                  <l>sie quellen aus so bittrem Seim: </l>
+                  <l>Denn wir sind die, die nicht begehrt sind, </l>
+                  <l>und sind doch jung an Seel und Leib — </l>
+                  <l>Die wir allein des Weibes wert sind, </l>
+                  <l>uns liebt kein Weib. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>                        
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.15</idno>
+               </title>
+               <title>Frühlingsnacht</title>
+               <author>Brandenburg, Hans</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="38"/>
+               <head type="head">Frühlingsnacht</head>
+               <lg>
+                  <l>Oh wie der Bach vor meinem Fenster dröhnt und braut, </l>
+                  <l>und wirr, verworren schwillt es wie Glockenlaut </l>
+                  <l>in dieses Rauschen die ganze Nacht — </l>
+                  <l>Ich bin mit einmal aufgewacht </l>
+                  <l>und liege schwer in feuchtem Samen, </l>
+                  <l>ich lieg und stammle keinen Namen, </l>
+                  <l>bin Weib und Mann und Mann und Weib. </l>
+                  <l>Oh Erde, brüchig-brünstige Ackerkrume, </l>
+                  <l>in der es keimt und gärt für eine Blume, </l>
+                  <l>du geiler, lechzender, weit offner Schoß — </l>
+                  <l>Ich bebe. Wie ist alles riesengroß! </l>
+                  <l>So brüchig-brünstig ist mein Leib, </l>
+                  <l>auch ich bin eine aufgepflügte Ackerkrume — </l>
+                  <l>Geil wächst um Mitternacht aus mir so eine wilde Blume. </l>
+                  <l>Ich liege schwer in feuchtem Samen, </l>
+                  <l>und wenns auch zuckt, sich bäumt, sich bäumt, </l>
+                  <l>so geil, so strotzend, so verschwenderisch überschäumt — </l>
+                  <l>ich stammle dennoch keinen Namen: </l>
+                  <l>ich bin der Rhythmus, der in stürmender Schöpfermacht </l>
+                  <l>die brüchige Erde schwanger und trächtig macht. </l>
+                  <l>In dieser Nacht ward ich zum Mann —: </l>
+                  <l>Nun kenn ich Empfängnis und Befruchtung, all das Brodeln, Gären, Keimen, Brauen, </l>
+      <pb n="39"/><l>nun schütteln mich Wollustkrämpfe und ein mitternächtiges Grauen, </l>
+                  <l>nun weiß ich, daß ich alles kann. </l>
+                  <l>Oh zuckender Schoß, ich stammle in Dich hinein und bin doch Du, Du brüchig-brünstige Scholle. </l>
+                  <l>Und immer durch die ganze Nacht dies volle </l>
+                  <l>Rauschen des Wassers, das dröhnt und braut, </l>
+                  <l>und die ganze Nacht schwimmt als ein verworrener, dunkler Glockenlaut. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>                       
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.16</idno>
+               </title>
+               <title>Johannisnacht</title>
+               <author>Brandenburg, Hans</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="40"/>
+               <head type="head">Johannisnacht</head>
+               <lg>
+                  <l>Kannst Du mich mit allen meinen Schmerzen tragen? </l>
+                  <l>Oh, so </l>
+                  <l>schluchz ich Dir Dank, schluchz ich Dir Dank. </l>
+                  <l>Bist Du so stark und kannst Du mich mit meinen Freuden tragen? </l>
+                  <l>Oh, so </l>
+                  <l>schluchz ich Dir Dank, schluchz ich Dir Dank. </l>
+                  <l>Kennst Du meine schauerlichen Einsamkeiten, mein Entsagen? </l>
+                  <l>Oh, so </l>
+                  <l>schluchz ich Dir Dank, schluchz ich Dir Dank. </l>
+                  <l>Und brauch ich nie mehr in die Kissen mein Elend zu klagen? </l>
+                  <l>Oh, so </l>
+                  <l>schluchz ich Dir Dank, schluchz ich Dir Dank. </l>
+               </lg>
+               <lg>
+                  <l>Es schwimmt Jasminduft schwül im kühlen Heugeschwäle, </l>
+                  <l>und der Hollunder hat die scharfe Süßigkeit, </l>
+                  <l>die aus erhitzten Mädchenleibern prickelt </l>
+                  <l>an Juniabenden — wie heut: </l>
+                  <l>wo Deine scharfe Süßigkeit mich trunken macht </l>
+                  <l>wie der Hollunder </l>
+                  <l>und die Heuduftwellen und die schwimmende </l>
+                  <l>Schwüle des Jasmins. Und sieh, </l>
+      <pb n="41"/><l>dort funkt ein Johanniskäfer auf, </l>
+                  <l>und dort, </l>
+                  <l>und da, </l>
+                  <l>und hier und da und dort — ein grünes Funkenglimmern, </l>
+                  <l>ein Sterntanz durch die Nacht. </l>
+               </lg>
+               <lg>
+                  <l>Hier zwischen diesen hohen Bäumen drückt </l>
+                  <l>sich schwer und weich auf uns das Dunkel, drückt </l>
+                  <l>so schwer und weich Deine Hand. </l>
+                  <l>Und Deine Nähe, die wie der Hollunder ist. </l>
+               </lg>
+               <lg>
+                  <l>Und soll ich denn nie wieder einsam sein? </l>
+                  <l>Oh, so </l>
+                  <l>schluchz ich Dir Dank, schluchz ich Dir Dank. </l>
+                  <l>Und Du bist mein? und </l>
+                  <l>ich bin Dein? Oh so </l>
+                  <l>schluchz ich Dir Dank, </l>
+                  <l>schluchz ich Dir Dank. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>                        
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.17</idno>
+               </title>
+               <title>Vor einem Embryo</title>
+               <author>Brandenburg, Hans</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="42"/>
+               <head type="head">Vor einem Embryo</head>
+               <lg>
+                  <l>Wie kommt es, daß von Deinem reinen Bild </l>
+                  <l>mein Blick stets wieder zu dem winzigen Menschen geht, </l>
+                  <l>dem Embryo in Spiritus, dem mißgestalteten, </l>
+                  <l>den all die grausig-schöne Häßlichkeit des Werdens schmückt, </l>
+                  <l>auf dessen schmalen, kleinen, dürren Gliederchen </l>
+                  <l>der unverhältnismäßig große Schädel sitzt? </l>
+                  <l>— Gehirn! Gehirn! Du kannst Dich nicht einmal im Keim </l>
+                  <l>in die bescheidnen Proportionen ersten Werdens fügen, </l>
+                  <l>es zielt schon jetzt ins Grenzenlose dein gewaltiger Umriß. — </l>
+               </lg>
+               <lg>
+                  <l>Dein reines Bild steht vor mir, Lieb, so unantastbar, </l>
+                  <l>so ganz in eigner schöner Güte reich, </l>
+                  <l>so ganz von jedem noch so großen Zweck befreit </l>
+                  <l>durch seine kraftvoll-edle und durchdachte Anmut. </l>
+               </lg>
+               <lg>
+                  <l>Und doch geht stets mein Blick von Dir zu all </l>
+                  <l>der grausig-schönen Häßlichkeit des Werdemenschen, </l>
+                  <l>der als erstickter Schrei nach Licht erscheint. </l>
+                  <l>Das quält mich so, das rührt mich so, ergreift mich so. </l>
+                  <l>Ich möchte weinend, schluchzend mich in Deine Arme legen. </l>
+      <pb n="43"/><l>Ach, das ist ja die große Einsamkeit, </l>
+                  <l>die schmerzliche, die schon in Deinem Antlitz starr ward </l>
+                  <l>und die nicht einmal ich erlösen konnte, weil </l>
+                  <l>sie nicht nach mir schreit und auch nicht — laß mir den Trost — nach jenem andern… </l>
+               </lg>
+               <lg>
+                  <l>Wenn uns der große Schöpferrhythmus faßt </l>
+                  <l>und uns durch heilige Liebesnächte schwingt </l>
+                  <l>und all mein Wesen schwer in Dich hineintropft </l>
+                  <l>in zuckenden, trächtigen, heiligen Samenfunken: </l>
+                  <l>Dann bricht Dein Blick in einem Morgenrot, </l>
+                  <l>in das sich fern, ganz fern ein Embryo krampft, </l>
+                  <l>der seinen übergroßen Kopf durchbluten läßt </l>
+                  <l>vom Sonnenaufgang und sich spannt und dehnt </l>
+                  <l>und krampfhaft krümmt im ungeheuren Werdeschmerz... </l>
+               </lg>
+               <lg>
+                  <l>Oh laß mich diesen Traum Dir bringen, Lieb, </l>
+                  <l>in Deine Einsamkeit — Deinen Erlösungstraum. </l>
+                  <l>Laß ihn entgegenträumen jenem Tag, an dem </l>
+                  <l>zum erstenmal Dein Schluchzen </l>
+                  <l>vor lauter Liebe lacht... </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>                        
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.18</idno>
+               </title>
+               <title>Briefblatt</title>
+               <author>Brandenburg, Hans</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="44"/>
+               <head type="head">Briefblatt</head>
+               <lg>
+                  <l>Vielleicht mußt Dus noch tausendmal empfinden, </l>
+                  <l>wie verwandt wir sind in unserm Leid, </l>
+                  <l>in aller unsrer Einsamkeit, </l>
+                  <l>und dann erst — wirst Du mich ganz finden. </l>
+                  <l>Vielleicht wird erst die Zeit </l>
+                  <l>uns fest aneinander binden. </l>
+               </lg>
+               <lg>
+                  <l>Du hast zu tief und schwer gelitten, </l>
+                  <l>als daß Du in jähen, stürmenden Flammen wild erobert werden kannst — </l>
+                  <l>Um das will ich Dich bitten, </l>
+                  <l>was Du an stillem Leid gewannst. </l>
+               </lg>
+               <lg>
+                  <l>Uns Ewig-Sehnsüchtigen </l>
+                  <l>werden selbst im höchsten Erfüllen </l>
+                  <l>die Herzen niemals leicht; </l>
+                  <l>neue Ziele müssen sich uns enthüllen, </l>
+                  <l>wenn wir mit unsern kranken, flüchtigen </l>
+                  <l>Füßen lang erstrebte endlich erreicht. </l>
+               </lg>
+               <lg>
+                  <l>Wenn wir einst alles Träumen und Hoffen, </l>
+                  <l>das längst zu Tode getroffen, </l>
+                  <l>all unsre toten Wünsche und Enttäuschungen, </l>
+                  <l>alles, um das wir vergeblich gerungen, </l>
+                  <l>wenn wir unser tiefstes Wissen, </l>
+                  <l>das uns das Leben gab, indem es uns alles entrissen, </l>
+                  <l>wenn wir das alles zusammenlegen — </l>
+               </lg>
+               <lg>
+                  <l>ruht darauf nicht doch ein großer Segen? </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>                       
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.19</idno>
+               </title>
+               <title>Erster Satz der „Sinfonie"</title>
+               <author>Brandenburg, Hans</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="45"/>
+               <head type="head">Erster Satz der „Sinfonie"</head>
+               <lg>
+                  <l>Meine Tränen tropfen mit den Tränen der Großen </l>
+                  <l>zusammen nieder — ach ist das ein flutender Chor, </l>
+                  <l>der durch die Zeiten klingt und rauscht... Wir weinen... weinen... </l>
+                  <l>Und der Strom, der weich und weh und blutig-heiß aus unsern Augen niederbricht, </l>
+                  <l>schlägt hart auf an der Härte dieser Welt... </l>
+               </lg>
+               <lg>
+                  <l>Was ist es, daß das Kleinste mich zum Weinen bringen kann? </l>
+                  <l>daß alles, alles mich so stört und stößt, mich so verwundet und verwirrt? </l>
+                  <l>daß ich so furchtbar stark und — furchtbar hilflos bin? </l>
+               </lg>
+               <lg>
+                  <l>Auf den Großen, auf den Gütigen, auf den Milden </l>
+                  <l>warte ich, so wie sie alle warteten, </l>
+                  <l>daß er mich Verweinten in die selbstlosen Arme nähme: </l>
+                  <l>„Da, iß mein Brot und trinke meine Liebe! </l>
+                  <l>Ich wehre alles von Dir ab. Trink, trink </l>
+                  <l>auch den schwermütigen Wein Deiner Einsamkeit, </l>
+                  <l>den schöpferischen, und singe dann, singe </l>
+                  <l>Deine Freude, daß ich glücklich bin..." </l>
+               </lg>
+               <lg>
+                  <l>So warte ich und weiß, daß ich vergeblich warte, </l>
+                  <l>und der Tränenchor schwillt an zum einsamen Gebet: </l>
+                  <l>„Oh würden wir Tränen doch </l>
+                  <l>gesät für eine Zukunft, in die Zukunft, </l>
+                  <l>und möchten herrlich blühn — dereinst... dereinst..." </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.20</idno>
+               </title>
+               <title>Allerseelen</title>
+                <author>Isemann, Bernd</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="blankPage"><pb n="46"/></div>
+            <div type="index"><pb n="47"/><p>Bernd Isemann</p></div>
+            <div type="blankPage"><pb n="48"/></div> 
+            <div type="poem"><pb n="49"/>
+               <head type="head">Allerseelen</head>
+               <lg>
+                  <l>Ein endlos langer trüber Feiertag </l>
+                  <l>wie ein gewaltiges erzwungenes Gähnen, </l>
+                  <l>und stets der gleiche müde Glockenschlag, </l>
+                  <l>und die Erinnerung so vieler Tränen, — </l>
+                  <l>und halber Ernst, halb Ironie: </l>
+                  <l>und komische Rührung, man weiß selbst nicht wie — </l>
+                  <l>das ist der Tag der Toten, </l>
+                  <l>auch meiner Toten. </l>
+               </lg>
+               <lg>
+                  <l>In braunen Fetzen stehen die Platanen, </l>
+                  <l>und die Allee ist noch von gestern naß; </l>
+                  <l>fast fehlt der Mut, sich da hindurch zu bahnen, </l>
+                  <l>und mir erscheint es wie ein schlechter Spaß, </l>
+                  <l>dies Menschendrängen lässig voll Behagen </l>
+                  <l>mit Mänteln, Schirmen und mit Kinderwagen, </l>
+                  <l>das ist der Tag der Toten, </l>
+                  <l>auch meiner Toten. </l>
+               </lg>
+               <lg>
+                  <l>Und dann in Schwarz ein rotgeweinter Blick </l>
+                  <l>von irgendwo und wie ein Blitz vorüber: </l>
+                  <l>Ich seh mich um, das war viel altes Glück! </l>
+                  <l>Was gilts? Mir ist solch altes Glück noch lieber; </l>
+      <pb n="50"/><l>könnt ich so weinen und mich still verschließen, — </l>
+                  <l>und schließlich, — jeder Schmerz ist auch Genießen, </l>
+                  <l>das ist der Tag der Toten, </l>
+                  <l>auch meiner Toten. </l>
+               </lg>
+               <lg>
+                  <l>Der graue Himmel saugt die Glocken auf, </l>
+                  <l>der Kirchhof ist voll heimlicher Gestalten. </l>
+                  <l>Vom großen Kreuze funkelt neu der Knauf </l>
+                  <l>und jedes Grab ist nett und rein gehalten, </l>
+                  <l>wie jeder kann und mag. — Und da die nette Kleine, </l>
+                  <l>im roten Kleidchen schlüpft sie um die Steine. — </l>
+                  <l>Das ist der Tag der Toten, </l>
+                  <l>auch meiner Toten. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>                        
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.21</idno>
+               </title>
+               <title>An ein Mädchen</title>
+                <author>Isemann, Bernd</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="51"/>
+               <head type="head">An ein Mädchen</head>
+               <lg>
+                  <l>Noch gehst du halb demütig, </l>
+                  <l>halb nachdenklich und bedrückt </l>
+                  <l>gesenkten Kopfs, und alle Schwermut sucht heißblütig- </l>
+                  <l>dunklen Sinn, der dich beglückt </l>
+                  <l>ins Leben höbe, und die Augen dürsten. </l>
+               </lg>
+               <lg>
+                  <l>Schon aus der Erde wühlt es auf </l>
+                  <l>und wächst sich in dich, drängt und staut und spannt, </l>
+                  <l>schon hebt der Stolz den jungen Schmuck der Brüste, </l>
+                  <l>und wie ein Boot sich wiegt an stiller Küste, </l>
+                  <l>so ward dein Gang, dir selber unbekannt. </l>
+               </lg>
+               <lg>
+                  <l>Du gleichst dem Mohn, wenn seine Knospe schwer </l>
+                  <l>am ratlos zagen Stengel niederhängt, </l>
+                  <l>wenn ihre grüne Hülle schon nicht mehr </l>
+                  <l>die rote Glut verbirgt, die aus ihr drängt. </l>
+                  <l>Bald, wie sie endlich durch die Träume bricht, </l>
+                  <l>hebt sich ihr glutverschämtes Angesicht, </l>
+                  <l>der Stiel lernt Kraft und Lächeln lernt die Blüte, </l>
+                  <l>und duftbeseligt streckt sie sich im Licht: </l>
+                  <l>Gib alles Glück mir, mir, daß ich es hüte. </l>
+               </lg>
+               <lg>
+                  <l>Der Schwermut trüber Saft, der dich durchflossen, </l>
+                  <l>liegt dann im Schoß zu heiliger Frucht verschlossen, </l>
+                  <l>und gibt einst Trunkenheit und Schlaf und Tod, </l>
+                  <l>wem sich der tiefe Kelch in Schauern bot. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>                        
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.22</idno>
+               </title>
+               <title>Das schwarze Lachen</title>
+                <author>Isemann, Bernd</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="52"/>
+               <head type="head">Das schwarze Lachen</head>
+               <lg>
+                  <l>Das Lachen aus schwarzen Zähnen </l>
+                  <l>hat mich getroffen. </l>
+                  <l>Da lag mein Allerinnerstes offen. </l>
+                  <l>Auf meine Schmerzen, die geheimsten Tränen, </l>
+                  <l>die dem Glück entgegenschrien, </l>
+                  <l>hat die Welt gespien. </l>
+                  <l>Wo flüchte ich mein Liebstes hin? </l>
+               </lg>
+               <lg>
+                  <l>Es wird alles zu Gift, </l>
+                  <l>wohin dies Lachen trifft, </l>
+                  <l>das schwarze, stumme Lachen. </l>
+                  <l>Von solchen Zähnen wird zuletzt </l>
+                  <l>einst Gott zerfetzt, </l>
+                  <l>und nichts ist wieder gut zu machen. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.23</idno>
+               </title>
+               <title>Orpheus</title>
+                <author>Isemann, Bernd</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="53"/>
+               <head type="head">Orpheus</head>
+               <lg>
+                  <l>Schmachtet Deine Geige weiter? — </l>
+                  <l>weiße Birken, weiße Weiher — </l>
+                  <l>Werden Deine Töne breiter? — </l>
+                  <l>Myrthendickicht, rote Schleier — </l>
+               </lg>
+               <lg>
+                  <l>Wirst du ohne Wort vertrauen? </l>
+                  <l>Siehst du? Sieh, o weiß im Blauen </l>
+                  <l>ein Krönlein tanzt auf blassem Strahl, </l>
+                  <l>ein Rauschen und Sprühen: Höh und Tal — </l>
+                  <l>und Wipfel, die beschienen sind. </l>
+                  <l>Du schweigst, du schweigst? — </l>
+                  <l>Zwei goldne Vögel paaren sich im Wind. </l>
+               </lg>
+               <lg>
+                  <l>Tastet deine Geige weiter? </l>
+                  <l>Stärker, stärker! — Stark und licht! </l>
+                  <l>Abendhimmel — Flammenscheiter, </l>
+                  <l>blinder, gläubiger Erdenschreiter, </l>
+                  <l>selige Liebe, reicher Verzicht. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>                        
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.24</idno>
+               </title>
+               <title>Der Tanz</title>
+                <author>Isemann, Bernd</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="54"/>
+               <head type="head">Der Tanz</head>
+               <lg>
+                  <l>Wenn Sie mir nichts zu sagen haben, </l>
+                  <l>was drücken Sie so meine Hand? </l>
+                  <l>Ich weiß, das Glück ist längst begraben, </l>
+                  <l>doch haben Sie mir nichts bekannt. </l>
+               </lg>
+               <lg>
+                  <l>Die Walzer wiegen tote Äste </l>
+                  <l>auf ihrer spiegelglatten Flut: </l>
+                  <l>Die Menschen wollen nur das Beste, </l>
+                  <l>doch wird es schließlich alles gut. </l>
+               </lg>
+               <lg>
+                  <l>Wenn Sie mir nichts zu sagen haben, </l>
+                  <l>was gehn Sie immer hier vorbei? </l>
+                  <l>Sie gleichen einem kranken Raben, </l>
+                  <l>wir tanzen, Achtung! — eins, zwei, drei —. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>                       
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.25</idno>
+               </title>
+               <title>Nach dem Regen</title>
+                <author>Isemann, Bernd</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="55"/>
+               <head type="head">Nach dem Regen</head>
+               <lg>
+                  <l>Weiche zuckende Laute, </l>
+                  <l>Frühlings-Trauer und Schauer </l>
+                  <l>einer Amsel, süß vertraute, </l>
+                  <l>die sich an die tropfenden Knospen schmiegen. </l>
+                  <l>Ein Stilleliegen, ein Versiegen </l>
+                  <l>des Tags in Grau. </l>
+                  <l>Und süß und spöttisch klingt es von der Mauer </l>
+                  <l>aus dem Gebüsch her. Kleine närrische Frau, </l>
+                  <l>Schwarzamsel, kleine, bleib. </l>
+                  <l>Dein kurzes Lied, das immer wiederkehrt, </l>
+                  <l>ich lieb es, o ich lieb ein junges Weib </l>
+                  <l>mit schwarzem, schwarzem Haar, </l>
+                  <l>wie Walderde so schwer. </l>
+               </lg>
+               <lg>
+                  <l>Horch, wie sich deine kleine Sehnsucht wehrt! </l>
+                  <l>Ich weiß, noch ist der Garten leer, </l>
+                  <l>und doch nicht mehr, </l>
+                  <l>wie er vor Tagen war. </l>
+                  <l>Bleib, bleib, ich war so finster und so matt. </l>
+                  <l>Der Ton, der so gar süß ins Weite zieht, </l>
+                  <l>ich lieb ihn mehr als Nachtigallenlied, </l>
+                  <l>das Sommernachtlied, das kein Ende hat. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>                        
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.26</idno>
+               </title>
+               <title>Erntelied</title>
+                <author>Isemann, Bernd</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="56"/>
+               <head type="head">Erntelied</head>
+               <lg>
+                  <l>Die Sensenwahrheit rauscht im reifen Korn. </l>
+                  <l>Wer lehrte sie? </l>
+                  <l>So schweigend ist der Abend wie noch nie, </l>
+                  <l>so wollustdüster schwillt des Mondes Horn. — </l>
+               </lg>
+               <lg>
+                  <l>Ein Engel mit den Zügen schweren Leides </l>
+                  <l>kniet auf der hohen Staffel des Getreides. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.27</idno>
+               </title>
+               <title>Am Wasser</title>
+                <author>Isemann, Bernd</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="57"/>
+               <head type="head">Am Wasser</head>
+               <lg>
+                  <l>Ich stand am Wasser. Fern auf blanken Schilden </l>
+                  <l>wiegte sich weißes Licht. </l>
+                  <l>Zu meinen Füßen rührte es sich nicht, </l>
+                  <l>es trübte nur in plötzlichen Gebilden </l>
+                  <l>mein grün gespiegeltes Gesicht. </l>
+               </lg>
+               <lg>
+                  <l>Und einmal trat das Alter in die Züge, </l>
+                  <l>bleifarben sah ich Kinn und Wange schrumpfen, </l>
+                  <l>des Daseins ungeheuerliche Lüge! </l>
+                  <l>mein eignes Bild, es schaute mich mit stumpfen </l>
+                  <l>verräterischen Blicken an. Mit kaltem Schrecken </l>
+                  <l>schien mich mein Leben aus der Gruft zu necken. </l>
+               </lg>
+               <lg>
+                  <l>Nein, nein! — Ins Ewige hinüberwelken! — </l>
+                  <l>Zurück ins Leben? Aus der Tiefe steigt </l>
+                  <l>ein Duft von Tod, von zärtlich-starken Nelken, </l>
+                  <l>ringsum die Weite, Erd und Himmel, schweigt. </l>
+               </lg>
+               <lg>
+                  <l>Schwer steht der Augenblick im ewig Schwanken, </l>
+                  <l>Sterben ist Pflicht: </l>
+                  <l>So schäumt das bange Zwielicht einer Seele </l>
+                  <l>des Todes Kraft in strahlende Gedanken. </l>
+      <pb n="58"/><l>Da gedachte ich der Teerose, der schlanken, </l>
+                  <l>in Deiner Hand. </l>
+                  <l>Vom Tau gekrönt </l>
+                  <l>war sie, und Deine Hand, </l>
+                  <l>vom Leben nicht verwöhnt, </l>
+                  <l>war weiß im duffen Grün und hielt sie steif. </l>
+                  <l>Sie zitterte inbrünstig, goldig, reif. </l>
+               </lg>
+               <lg>
+                  <l>„In reifer Kraft trägst Du des Welkens Zeichen </l>
+                  <l>mit einer Hingebung so ohne gleichen, </l>
+                  <l>des Duftens nimmer müd und nimmer satt </l>
+                  <l>des Welkens und vom vielen Duften matt." </l>
+                  <l>So sprach es in mir: Leiden und Vollbringen! </l>
+                  <l>So nimm das Dunkel unter deine Schwingen, </l>
+                  <l>fürchte nicht! </l>
+                  <l>Sterben ist Pflicht. </l>
+                  <l>Schwer steht der Augenblick im ewig Schwanken, </l>
+                  <l>und leuchtend wie das ewige Gericht </l>
+                  <l>des Todes Kraft im strahlenden Gedanken. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.28</idno>
+               </title>
+               <title>Lukrezia</title>
+                <author>Isemann, Bernd</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="59"/>
+               <head type="head">Lukrezia</head>
+               <lg>
+                  <l>Du weißt, was mich mit Macht begeistern kann, </l>
+                  <l>ein freies Wort und große stolze Tat — </l>
+                  <l>Was aber könnte mich dem bittren Bann </l>
+                  <l>des Worts entziehen, das so schmerzlich bat: </l>
+                  <l>„Bin ich denn soviel wert?" — </l>
+               </lg>
+               <lg>
+                  <l>Ein Kind erwartungsstill, nun heiß begehrt </l>
+                  <l>mit einem Mal, und viel geliebt von allen, — </l>
+                  <l>wie um sie her des Schicksals Würfel fallen, </l>
+                  <l>halb Spiel, halb Schuld, — von Rausch und Qual verzehrt, </l>
+                  <l>wie sie erwacht, und alles um sie her </l>
+                  <l>versinkt, sie sieht sich über einem Meer </l>
+                  <l>des Elends schweben, das sie bang verklärt: </l>
+                  <l>„Bin ich denn soviel wert?" — </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>     
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.29</idno>
+               </title>
+               <title>Attel</title>
+                <author>Isemann, Bernd</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="60"/>
+               <head type="head">Attel</head>
+               <lg>
+                  <l>Weiß und kühl lenkt </l>
+                  <l>um den Hügel der Strom. </l>
+                  <l>Hochstämmige Buchen </l>
+                  <l>drängen heran, bis </l>
+                  <l>dicht an die Schranken der Rennbahn. </l>
+               </lg>
+               <lg>
+                  <l>Aber den Hügel empor, </l>
+                  <l>den die Zinnen des Klosters krönen, </l>
+                  <l>wachsen wenig Akazien nur, </l>
+                  <l>nur für glührote Königskerzen </l>
+                  <l>und vielfarbiges Beerengewächs </l>
+                  <l>ist Raum und für versengte Farren. </l>
+               </lg>
+               <lg>
+                  <l>Ach, die höchsten Kronen </l>
+                  <l>sind vom Abend geziert mit mildem Welken, </l>
+                  <l>und in den Fenstern des Klosters </l>
+                  <l>entblättert der Abend </l>
+                  <l>eine goldene Rose. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>      
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.30</idno>
+               </title>
+               <title>In der Abendsonne</title>
+                <author>Isemann, Bernd</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="61"/>
+               <head type="head">In der Abendsonne</head>
+               <lg>
+                  <l>Als wär dein Kleid aus lauter Glockenblümchen, </l>
+                  <l>so halbverwelkte knittrig-feine Glöckchen, </l>
+                  <l>die bei jedem Schritte müder würden, — </l>
+                  <l>istʼs in der Abendsonne. </l>
+               </lg>
+               <lg>
+                  <l>Als wär dein rotes Band ein schlanker Reiher, </l>
+                  <l>der seine krummen Flügel komisch spreizte, </l>
+                  <l>und mit dem Schnabel einmal weitaus stieße, </l>
+                  <l>istʼs in der Abendsonne. </l>
+               </lg>
+               <lg>
+                  <l>Als wär dein weiter Ärmel innen eine </l>
+                  <l>Klatschrose, der dein nackter Arm entstiege, </l>
+                  <l>wenn du ihn hebst zum braunen Haar, </l>
+                  <l>istʼs in der Abendsonne. </l>
+               </lg>
+               <lg>
+                  <l>Als wär der Abend dein, und alle Wunder, </l>
+                  <l>die dir das Blättergrün ins Haar gedichtet, </l>
+                  <l>nichts als die klare Antwort auf dein Wesen, </l>
+                  <l>istʼs in der Abendsonne. </l>
+               </lg>
+               <lg>
+                  <l>Als stünd ich ganz allein und doch gelassen </l>
+                  <l>und wäre weit vom Bann des schönen Leibes, </l>
+                  <l>und hörte nur, wie fern ein Fink noch ruft, </l>
+                  <l>istʼs in der Abendsonne. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>      
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.31</idno>
+               </title>
+               <title>Venus</title>
+                <author>Isemann, Bernd</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="62"/>
+               <head type="head">Venus</head>
+               <lg>
+                  <l>Die Bucht liegt weiß versandet </l>
+                  <l>vom Meere abgetrennt. </l>
+                  <l>Eine Muschel kommt gelandet, </l>
+                  <l>und Venus ungewandet </l>
+                  <l>entsteigt dem blauen Element. </l>
+               </lg>
+               <lg>
+                  <l>Das feuchte Knäuel goldner Locken </l>
+                  <l>preßt sie auf ihren Schoß, </l>
+                  <l>fern läuten kecke Herdenglocken, </l>
+                  <l>am Himmel treiben Rosa-Flocken, </l>
+                  <l>sie lächelt bloß. </l>
+               </lg>
+               <lg>
+                  <l>Die Winde führen Prachtgewänder, </l>
+                  <l>Geschmeid und weiches Linnen bei </l>
+                  <l>mit Purpurstreifen um die Ränder, </l>
+                  <l>das Haar zerteilen grüne Bänder, — </l>
+                  <l>der Hirt spielt die Schalmei. </l>
+               </lg>
+               <lg>
+                  <l>Die Herde treibt in trägem Gange </l>
+                  <l>vorbei durchs enge Felsentor — </l>
+                  <l>Was leuchtet dort am öden Hange? </l>
+                  <l>Ihm schießt es brennend in die Wange, </l>
+                  <l>und zitternd tritt er vor. </l>
+               </lg>
+               <lg>
+                  <l>Er küßt die langen schmalen Hände </l>
+                  <l>wie ein Verrückter willenlos, </l>
+                  <l>er saugt der Lippen Feuerbrände, </l>
+                  <l>den Gürtel löst er um die Lende, — </l>
+                  <l>sie lächelt bloß. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+   <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.32</idno>
+               </title>
+               <title>In Qual</title>
+               <author>Vesper, Will</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="index"><pb n="63"/><p>Will Vesper</p></div>
+            <div type="blankPange"><pb n="64"/></div>
+            <div type="poem"><pb n="65"/>
+               <head type="head">In Qual</head>
+               <lg>
+                  <l>Wie der Gedanke arm und müde macht — </l>
+                  <l>Wenn ich in heiße Decken mich verwühlt </l>
+                  <l>und Dein, nur immer Dein gedacht — </l>
+               </lg>
+               <lg>
+                  <l>Und draußen vor dem Fenster spült </l>
+                  <l>das Wasser rasch und quälend durch die Nacht </l>
+                  <l>und lacht und höhnt, und tausend Fratzen hetzen </l>
+                  <l>blödsinnig Lachen auf mich. Wolkenfetzen </l>
+                  <l>ziehn oben grinsend über Mond und Licht. </l>
+               </lg>
+               <lg>
+                  <l>Und nur der Wind, der mit den Bäumen spricht, </l>
+                  <l>sagt mir von Stillesein, von liebevollen, </l>
+                  <l>ersehnten Träumen, die mich trösten sollen, </l>
+                  <l>... von Träumen. </l>
+                  <l>Wie oben in das Licht </l>
+                  <l>des Himmels langsam sich die Zweige senken, </l>
+                  <l>da seh ich blaß und zitternd Dein Gesicht </l>
+                  <l>aus großen Augen heiß mir Liebe schenken. </l>
+                  <l>Sich neigen, neigen und mir leise sagen: </l>
+                  <l>Ich will Dich ganz mit allen Qualen tragen. </l>
+               </lg>
+               <lg>
+                  <l>Wie der Gedanke arm und müde macht. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>      
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.33</idno>
+               </title>
+               <title>Resignation</title>
+               <author>Vesper, Will</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="66"/>
+               <head type="head">Resignation</head>
+               <lg>
+                  <l>Nun ist die Welt sich ganz des Sterbenmüssens klar, </l>
+                  <l>und aller Kampf stirbt in ein paar </l>
+                  <l>schweren Wolken, die noch blutig im Abendrot liegen, </l>
+                  <l>in ein paar Bäumen, die mit trotzigem Schütteln </l>
+                  <l>noch einmal der Stille entgegen fliegen </l>
+                  <l>und ihre klammernden Fäuste von den Schultern rütteln. </l>
+               </lg>
+               <lg>
+                  <l>Dann nur noch ein stumpf Dreingeben, Schlafenlegen. </l>
+                  <l>Und nicht einmal ein Schrei mehr fährt auf gegen </l>
+                  <l>die Stille, die nun alles duckt. </l>
+                  <l>Bleich in das tote Land guckt, </l>
+                  <l>in der ganzen Welt allein, </l>
+                  <l>der Mond ängstlich über den Berg herein. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>      
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.34</idno>
+               </title>
+               <title>Herbstsonne</title>
+               <author>Vesper, Will</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="67"/>
+               <head type="head">Herbstsonne</head>
+               <lg>
+                  <l>Heut lächelte der Herbst zum letzten Mal </l>
+                  <l>beschämt, daß ihm die Qual </l>
+                  <l>so wild verzerrte Züge machte, </l>
+                  <l>und war so zärtlich, dachte </l>
+                  <l>voll Liebe an den kleinsten, bunten Baum, </l>
+                  <l>hing über alles tröstend einen Traum. </l>
+               </lg>
+               <lg>
+                  <l>Die ganze Welt </l>
+                  <l>trägt offen nun und unverstellt </l>
+                  <l>der Schmerzen wehes Mal </l>
+                  <l>und hat die große Scham bekommen </l>
+                  <l>vor allem Kleinlichen und Kleinen, </l>
+                  <l>hat alle Schleier abgenommen </l>
+                  <l>und lächelt unter Weinen. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>     
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.35</idno>
+               </title>
+               <title>Und dann!</title>
+               <author>Vesper, Will</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="68"/>
+               <head type="head">Und dann!</head>
+               <lg>
+                  <l>Und dann? Und dann? </l>
+                  <l>Eine dumme Frage, </l>
+                  <l>die das Leben alle Tage </l>
+                  <l>von neuem mit neuen Geschenken beschämt. </l>
+                  <l>Und immer wieder stehen wir vergrämt </l>
+                  <l>und sehn das Leben müde an. </l>
+                  <l>Und immer wieder krampfts in uns hinauf, </l>
+                  <l>gehn dunkle Brunnen in uns auf. </l>
+                  <l>Unten trauert die Nacht darin. </l>
+                  <l>Die Seele setzt sich auf den Rand, </l>
+                  <l>hinunter wollen Aug und Hand </l>
+                  <l>und fangen nach des Lebens Sinn. </l>
+                  <l>Wenn eine Träne hinunter rollt, </l>
+                  <l>zittert im Schwarz ein Ring von Gold. </l>
+                  <l>Die Seele lächelt wieder, </l>
+                  <l>und bückt sich tiefer nieder. </l>
+                  <l>Tiefer, tiefer hinunter. </l>
+                  <l>Einmal taucht sie unter. </l>
+                  <l>Ein milder Glanz erhellt </l>
+                  <l>den Grund. Das Wasser wellt </l>
+                  <l>aufleuchtend gegen die Wände an... </l>
+                  <l>...zerschellt... </l>
+                  <l>und dann? ... </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>      
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.36</idno>
+               </title>
+               <title>Nachts</title>
+               <author>Vesper, Will</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="69"/>
+               <head type="head">Nachts</head>
+               <div type="section">
+                  <head type="sectionNumber">I.</head>
+                  <lg>
+                     <l>Heut mitten in der Nacht </l>
+                     <l>fuhr ich aus heißem Schlaf jäh auf, </l>
+                     <l>in fremdem Zimmer. Saß im Bett und horchte </l>
+                     <l>dem leisen Summen, das auch in der Stille </l>
+                     <l>die Nacht lebendig macht und zitternd füllt. </l>
+                     <l>Ein Gleiten von Fäden, die auf glatten Spulen gehn... </l>
+                     <l>wie Seufzer... Lächeln... leise, endlos fern: </l>
+                     <l>Das Schicksal läßt den Webstuhl laufen in der Nacht. </l>
+                     <l>Ich hörte die Herzen in den Kammern unten </l>
+                     <l>wie Weberschifflein pochen — und erschrak, </l>
+                     <l>suchte in dem Hin und Wieder Dein Herz </l>
+                     <l>und fand es nicht und immer nicht... </l>
+                  </lg>
+               </div>
+               <div type="section"><pb n="70"/>
+                  <head type="sectionNumber">II.</head>
+                  <lg>
+                     <l>Das müßte dann das Ende sein und Ewigkeit: </l>
+                     <l>Eine Nacht, in der man müde schlafen geht, </l>
+                     <l>noch einen Augenblick am Fenster steht, </l>
+                     <l>eh man die Kleider auf den Stuhl zur Seite legt. </l>
+                     <l>Nach diesem wilden Tage hat die Stille, </l>
+                     <l>der wundervolle, lichte Frieden draußen, </l>
+                     <l>der Atem der Nacht erschütternd süße Kraft. </l>
+                     <l>In Schluchzen will das Innre überfließen, </l>
+                     <l>endloser Liebe bis zum Rand gefüllt, </l>
+                     <l>und denkt, wie selig nun der Morgen wird, </l>
+                     <l>wie reich der Tag, an Arbeit übervoll </l>
+                     <l>und Segen. </l>
+                  </lg>
+                  <lg>
+                     <l>Dann in die Decken. Weit und wohlig ausgestreckt. </l>
+                  </lg>
+                  <lg>
+                     <l>Ach, bin ich müde... Morgen kommt die Kraft... </l>
+                     <l>morgen... morgen... morgen. </l>
+                     <l>Im Wiegenliedton summt der Schlaf. </l>
+                     <l>Und nichts als das. </l>
+                  </lg>
+               </div>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>     
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.37</idno>
+               </title>
+               <title>An einem müden Abend</title>
+               <author>Vesper, Will</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="71"/>
+               <head type="head">An einem müden Abend</head>
+               <lg>
+                  <l>Nicht so laut... Nicht alles nennen. </l>
+                  <l>Stille... Sieh den Abend brennen. </l>
+                  <l>Feine Fäden unserer Brust </l>
+                  <l>muß ein Messer scharf zerschneiden. </l>
+                  <l>Schwere Lust und kitzelnd Leiden. </l>
+                  <l>Feine Fäden unserer Brust. </l>
+               </lg>
+               <lg>
+                  <l>Leise Messer, die sich weiden, </l>
+                  <l>neues will sich fremd entscheiden, </l>
+                  <l>und der Abend weicht der Nacht. </l>
+                  <l>Nacht hat viele tiefe Weiten. </l>
+                  <l>Und der Eulen Flügel gleiten, </l>
+                  <l>wie der Abend vor der Nacht. </l>
+               </lg>
+               <lg>
+                  <l>Dunkle Worte. Farbige Spiele. </l>
+                  <l>Worte haben schwere Kiele, </l>
+                  <l>schwerere, als wir gedacht. </l>
+                  <l>Leid ist schwer in sie gegossen, </l>
+                  <l>Blut ist über sie geflossen, </l>
+                  <l>schwer und mehr, als wir gedacht. </l>
+               </lg>
+               <lg>
+                  <l>Nun hat Spiel und Wort ein Ende. </l>
+                  <l>Nimm von mir die heißen Hände. </l>
+                  <l>Geh. Es ist unheimlich Licht </l>
+                  <l>dunkel Dir ins Aug gekommen. </l>
+                  <l>Blut ist über Dich geschwommen. </l>
+                  <l>— Fäden reißen. Viel zerbricht. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>      
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.38</idno>
+               </title>
+               <title>Die Kühle</title>
+               <author>Vesper, Will</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="72"/>
+               <head type="head">Die Kühle</head>
+               <lg>
+                  <l>Halte beide Hände in den Regen </l>
+                  <l>und fühle tief innen </l>
+                  <l>seine Kühle rinnen. </l>
+                  <l>Des heißen Tages Abendsegen. </l>
+                  <l>Die Kröten kriechen draußen auf den Wegen. </l>
+                  <l>Ein abendkühler Traum — nun muß ich mich besinnen — </l>
+                  <l>von einem Kinderabend will beginnen. </l>
+                  <l>Ich muß mich schlafen legen. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.39</idno>
+               </title>
+               <title>Die Stille</title>
+               <author>Vesper, Will</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="73"/>
+               <head type="head">Die Stille</head>
+               <lg>
+                  <l>Endlich hast du Ruhe, deine Villa </l>
+                  <l>und deinen Garten draußen vor der Stadt, </l>
+                  <l>und bist allein, gehst selbstgeharkte Wege, </l>
+                  <l>abends, wenn die Amseln singen, siehst den Wald </l>
+                  <l>stiller, und fern die Stadt einschlafen. </l>
+               </lg>
+               <lg>
+                  <l>Besuch, „Visite", kommt nur selten noch heraus. </l>
+                  <l>All dein Warten auf Einsamkeit </l>
+                  <l>hat dir die Zeit erfüllt. </l>
+                  <l>Und eine Weile ist dir leicht. </l>
+                  <l>Du atmest auf. Die Stille tut dir wohl, </l>
+                  <l>und wächst und wächst. Des Windes leiser Gang </l>
+                  <l>nur kommt wie Menschentritt. </l>
+               </lg>
+               <lg>
+                  <l>Und immer stiller, daß schon das Blatt, </l>
+                  <l>wenn es leise fällt, </l>
+                  <l>symbolisch dunkle Stimme hat, </l>
+                  <l>und du erschrickst. — Wie alles nun erst spricht. </l>
+                  <l>Du siehst der Welt nur näher ins Gesicht. </l>
+                  <l>Wie dicht dir alles rückt, </l>
+                  <l>was sonst der Menschen alberner Lärm erstickt, </l>
+                  <l>sich an dich drängt, </l>
+                  <l>sich dir aufzwängt. </l>
+                  <l>Die Stille gellt. </l>
+                  <l>Unheimlich wächst ein fahl Licht </l>
+                  <l>und du schreist nach Menschen. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+   <TEI>      
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>
+                  <idno type="antID">DE1905</idno>
+               </title>
+               <title>
+                  <idno type="poemID">DE1905.40</idno>
+               </title>
+               <title>Leidgesegnet. Qualbeschenkt</title>
+               <author>Vesper, Will</author>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+         </fileDesc>
+         <encodingDesc><p></p></encodingDesc>               
+      </teiHeader>
+      <text>
+         <body>
+            <div type="poem"><pb n="74"/>
+               <head type="head">Leidgesegnet. Qualbeschenkt</head>
+               <lg>
+                  <l>Ist denn das alles? So ein stilles Glück. </l>
+                  <l>Die Flut herein. Die Flut zurück. </l>
+                  <l>Ein stiller See voll Fische. </l>
+                  <l>Ein liebes Haus und reichgedeckte Tische. </l>
+                  <l>— Und im Herbste Nußalleen, </l>
+                  <l>wo die Früchte auf den Wegen </l>
+                  <l>aufgequollen dumpf zerspringen. </l>
+               </lg>
+               <lg>
+                  <l>Den Weinstock pflanzt ich nun — </l>
+                  <l>Was soll ich tun? — </l>
+                  <l>Und alles wächst, ich halt die Hand darunter. </l>
+                  <l>Bequemlichkeit und Fülle macht sich breit. </l>
+                  <l>Ich trag ein weiches, seidenes Kleid, </l>
+                  <l>und neid euch Leidgesegneten, </l>
+                  <l>daß Götter euch begegneten, </l>
+                  <l>in heiligem, gnädigem Liebeszorn. </l>
+               </lg>
+               <lg>
+                  <l>Laßt meine Hand in euren Wunden liegen. </l>
+                  <l>Laßt Blut von euch um meine weißen Finger fließen. </l>
+                  <l>Laßt mir den Wahnsinn süßen Mitleids, </l>
+                  <l>süßen Neids, </l>
+                  <l>ihr heiligen Märtyrer der großen Gnade. </l>
+               </lg>
+            </div>
+         </body>
+      </text>
+   </TEI>
+</teiCorpus>
