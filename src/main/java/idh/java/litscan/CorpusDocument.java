@@ -65,21 +65,18 @@ public class CorpusDocument implements ICorpusDocument {
 
     @Override
     public void setTokens(List<Token> tokens) {
-	this.tokens = tokens;
-
-	// Types automatisch berechnen:
-	List<String> uniqueTypes = new ArrayList<>();
-	for (Token t : tokens) {
-	    String surface = t.getCoveredText();
-	    if (!uniqueTypes.contains(surface)) {
-		uniqueTypes.add(surface);
-	    }
+	if (tokens != null) {
+	    this.tokens = tokens;
+	} else {
+	    this.tokens = new ArrayList<>();
 	}
-	this.types = uniqueTypes;
     }
 
     @Override
     public List<Token> getTokens() {
+	if (tokens == null) { // Sicherheitshalber
+	    tokens = new ArrayList<>();
+	}
 	return tokens;
     }
 

@@ -1,20 +1,27 @@
 package idh.java.litscan;
 
-import java.util.List;
-
-import idh.java.litscan.impl.Tokenizer;
+import idh.java.litscan.impl.Corpus;
+import idh.java.litscan.impl.CorpusDocument; // wir nehmen unsere eigene Klasse
 
 public class TestLitscan {
+    public static void main(String[] args) throws Exception {
+	Corpus corpus = new Corpus("MeinKorpus");
 
-    public static void main(String[] args) {
-	Tokenizer tokenizer = new Tokenizer();
+	// Testdokumente erstellen
+	ICorpusDocument doc1 = new CorpusDocument();
+	doc1.setId("1");
+	doc1.setTextContent("Hallo Welt!");
 
-	String text = "Hallo Welt! Das ist ein Test, 123.";
-	List<Token> tokens = tokenizer.tokenize(text);
+	ICorpusDocument doc2 = new CorpusDocument();
+	doc2.setId("2");
+	doc2.setTextContent("Java Programmierung");
 
-	System.out.println("Tokenisierungsergebnis:");
-	for (Token t : tokens) {
-	    System.out.println(t + " -> \"" + t.getCoveredText() + "\"");
-	}
+	// Dokumente hinzufügen
+	corpus.add(doc1);
+	corpus.add(doc2);
+
+	// Testausgabe
+	System.out.println("Korpusname: " + corpus.getName());
+	System.out.println("Anzahl Dokumente: " + corpus.getDocumentCount());
     }
 }
