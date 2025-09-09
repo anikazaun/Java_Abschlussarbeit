@@ -1,5 +1,6 @@
 package idh.java.litscan.impl;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -13,12 +14,10 @@ public class Corpus implements ICorpus {
 
     private String name;
     private List<ICorpusDocument> documents;
-    private Set<String> types; // alle verschiedenen Wörter
 
     public Corpus(String corpusName) {
 	this.name = corpusName;
-	this.documents = new java.util.ArrayList<>();
-	this.types = new java.util.HashSet<>();
+	this.documents = new ArrayList<>();
     }
 
     @Override
@@ -40,30 +39,25 @@ public class Corpus implements ICorpus {
 
     @Override
     public Set<Result> search(String query, boolean ci) {
-	Set<Result> results = new java.util.HashSet<>();
-
-	if (query == null || query.isEmpty()) {
-	    return results; // leere Suchanfrage → leeres Ergebnis
-	}
-
-	// Suchbegriff je nach Case-Insensitivity vorbereiten
-	String searchTerm = ci ? query.toLowerCase() : query;
+	Set<Result> results = new HashSet<>();
+	if (query == null || query.isEmpty())
+	    return results;
 
 	for (ICorpusDocument doc : documents) {
 	    if (doc.getTokens() == null)
-		continue; // Sicherheitscheck
+		continue;
 
-	    for (Token t : doc.getTokens()) {
-		String tokenText = t.getCoveredText();
-		if (ci)
-		    tokenText = tokenText.toLowerCase();
+	    for (Token token : doc.getTokens()) {
+		String tokenText = token.getCoveredText();
+		if (tokenText == null)
+		    continue;
 
-		if (tokenText.equals(searchTerm)) {
-		    results.add(new Result(doc, t));
+		boolean match = ci ? tokenText.equalsIgnoreCase(query) : tokenText.equals(query);
+		if (match) {
+		    results.add(new Result(doc, token));
 		}
 	    }
 	}
-
 	return results;
     }
 
@@ -107,13 +101,9 @@ public class Corpus implements ICorpus {
 
     @Override
     public List<ICorpusDocument> getDocumentsSortedByTokenCount() {
-	// Erstelle eine Kopie der Liste, damit die Original-Liste unverändert bleibt
-	List<ICorpusDocument> sortedDocs = new java.util.ArrayList<>(documents);
-
-	// Sortiere die Kopie nach Tokenanzahl
-	sortedDocs.sort((d1, d2) -> Integer.compare(d2.getTokens().size(), d1.getTokens().size()));
-
-	return sortedDocs;
+	List<ICorpusDocument> sorted = new ArrayList<>(documents);
+	sorted.sort((d1, d2) -> Integer.compare(d2.getTokens().size(), d1.getTokens().size()));
+	return sorted;
     }
 
 }

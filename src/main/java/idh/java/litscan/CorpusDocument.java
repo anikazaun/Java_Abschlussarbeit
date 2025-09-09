@@ -1,35 +1,27 @@
 package idh.java.litscan;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import idh.java.litscan.ex.InvalidOperationException;
 
 public class CorpusDocument implements ICorpusDocument {
 
-    // ====================
-    // Attribute (Felder)
-    // ====================
     private String title;
     private String id;
     private String textContent;
     private List<Token> tokens = new ArrayList<>();
     private List<String> types = new ArrayList<>();
 
-    // ====================
-    // Konstruktor(en)
-    // ====================
     public CorpusDocument() {
-	// Leerer Konstruktor
+	// tokens und types sind schon initialisiert
     }
-
-    // ====================
-    // Getter & Setter
-    // ====================
 
     @Override
     public String getTitle() {
-	return title;
+	return (title != null) ? title : "Unbekannt";
     }
 
     @Override
@@ -43,40 +35,27 @@ public class CorpusDocument implements ICorpusDocument {
     }
 
     @Override
+    public void setId(String id) throws InvalidOperationException {
+	if (this.id != null)
+	    throw new InvalidOperationException("ID already set!");
+	this.id = id;
+    }
+
+    @Override
     public String getTextContent() {
 	return textContent;
     }
 
     @Override
     public void setTextContent(String textContent) throws InvalidOperationException {
-	if (this.textContent != null) {
-	    throw new InvalidOperationException("Text content already set!");
-	}
+	if (this.textContent != null)
+	    throw new InvalidOperationException("Text already gesetzt!");
 	this.textContent = textContent;
-    }
-
-    @Override
-    public void setId(String id) throws InvalidOperationException {
-	if (this.id != null) {
-	    throw new InvalidOperationException("ID already set!");
-	}
-	this.id = id;
-    }
-
-    @Override
-    public void setTokens(List<Token> tokens) {
-	if (tokens != null) {
-	    this.tokens = tokens;
-	} else {
-	    this.tokens = new ArrayList<>();
-	}
+	tokenizeText(); // automatische Tokenisierung beim Setzen
     }
 
     @Override
     public List<Token> getTokens() {
-	if (tokens == null) { // Sicherheitshalber
-	    tokens = new ArrayList<>();
-	}
 	return tokens;
     }
 
@@ -85,24 +64,39 @@ public class CorpusDocument implements ICorpusDocument {
 	return types;
     }
 
+    private void tokenizeText() {
+	tokens.clear();
+	types.clear();
+	Set<String> uniqueTypes = new HashSet<>();
+
+	if (textContent != null && !textContent.isEmpty()) {
+	    String[] words = textContent.split("\\s+");
+	    for (String w : words) {
+		String clean = w.replaceAll("[^a-zA-ZäöüÄÖÜß]", "");
+		if (!clean.isEmpty()) {
+		    tokens.add(new Token(clean));
+		    uniqueTypes.add(clean.toLowerCase());
+		}
+	    }
+	}
+	types.addAll(uniqueTypes);
+    }
+
+    @Override
+    public void setTokens(List<Token> tokens) {
+	// TODO Auto-generated method stub
+
+    }
+
     @Override
     public double getTTR() {
-	if (tokens.isEmpty()) {
-	    return 0.0;
-	}
-	return (double) types.size() / tokens.size();
+	// TODO Auto-generated method stub
+	return 0;
     }
 
     @Override
-    public int compareTo(ICorpusDocument other) {
-	// Beispiel: Vergleich anhand der Tokenanzahl
-	return Integer.compare(this.tokens.size(), other.getTokens().size());
-    }
-
-    // Für Debugging: Dokument als String ausgeben
-    @Override
-    public String toString() {
-	return "CorpusDocument [id=" + id + ", title=" + title + ", textLength="
-		+ (textContent != null ? textContent.length() : 0) + "]";
+    public int compareTo(ICorpusDocument o) {
+	// TODO Auto-generated method stub
+	return 0;
     }
 }

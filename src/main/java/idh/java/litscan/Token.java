@@ -91,6 +91,10 @@ public class Token {
 	this.entireString = null;
     }
 
+    public Token(String raw) {
+	// TODO Auto-generated constructor stub
+    }
+
     /**
      * Returns a String representation of the Token. Please note that this is
      * <b>not</b> the text surface of the token, but includes the actual begin/end
